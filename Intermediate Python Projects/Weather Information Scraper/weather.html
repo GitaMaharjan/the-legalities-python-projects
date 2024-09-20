@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weather - Meteorological Forecasting Division</title>
+
+	<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+	<link href="/mfd.gov.np/_bootstrap/css/bootstrap.css"
+	rel="stylesheet">
+	<link href="/mfd.gov.np/_stylesheets/mfd.css" rel="stylesheet">
+	<link rel="icon"
+      type="image/png" 
+      href="/mfd.gov.np/_req/favicon.png">
+				<script src="/mfd.gov.np/_js/map.js"></script>
+
+		
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="/mfd.gov.np/_js/html5shiv.js"></script>
+	<script src="/mfd.gov.np/_js/respond.min.js"></script>
+
+
+	<![endif]-->
+<style>
+@media (min-width: 768px){
+	.navbar-static-top {
+		border-radius: 6px;
+	}
+}
+</style>
+</head>
+
+<body>
+<div class="site-header">
+	<div class="container">
+	 <div class="col-sm-4">
+		<img width="64px" src="/mfd.gov.np/_req/logo.png" />
+		<h2 style="margin-bottom: 5px">Government of Nepal</h2>
+		<h2>Department of Hydrology and Meteorology</h2>
+		<h1>Meteorological Forecasting Division</h1>
+	 </div>
+	 
+	 <div class="col-sm-8" style="padding-top:10px;">
+	 
+	 
+	 	<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+				</button>
+				<!-- <a class="navbar-brand" href="#">MFD</a> -->
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="/">Home</a></li><li class="active"><a href="/weather/">Weather</a></li><li><a href="/nwp/">NWP</a></li><li><a href="/satellite/">Satellite</a></li><li><a href="/mountaineering/">Mountaineering</a></li><li><a href="/report/">Archives</a></li>
+				</ul>
+			</div>
+		</div>
+	 
+	 </div>
+	 
+	</div>
+
+</div>
+	
+<DIV class="weather"><img src="/mfd.gov.np/_req/weather.png" width="100%" height="100%" style="position:absolute;left:0px;top:0px;"></img><div class="container"><h1>WEATHER</h1><ul class="nav nav-tabs navbar-right" id="weather_time"><li class="active"><a href="#now" data-toggle="tab">NOW</a></li><li><a href="#next12" data-toggle="tab">TODAY</a></li><li><a href="#next24" data-toggle="tab">TONIGHT</a></li></ul></div></DIV><DIV class="tab-content"><div class="container weather-main text-center tab-content"><img src="/mfd.gov.np/_req/nepal_map_blue.png"></img><div class="tag-pane fade in active" id="now" data-target="now"><div class="weather-more-info" id="weather-now-info"><div>Click on the stations to display more information</div></div></div><div class="tab-pane fade" id="next12" data-target="next12"><div class="weather-more-info" id="weather-next12-info"><div>Click on the stations to display more information</div></div><DIV class="weather-icon" style="left:12.375443823946%; top: 30.578774768213%" data-target="#weather-next12-info" title="Dipayal" time="Issued on 2024-09-20 06:00 NPT" station_id="22" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Sunrise&lt;/td&gt;&lt;dd&gt;06:09&lt;/dd&gt;&lt;dt&gt;Sunset&lt;/td&gt;&lt;dd&gt;18:21&lt;/dd&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly Cloudy&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;34 - 36 &amp;deg;C&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/a615e226f71bdf14eb5b2c41a1ddd3f4.png"></img><span>34 - 36 &deg;C</span></DIV><DIV class="weather-icon" style="left:8.2522047909537%; top: 29.816448443774%" data-target="#weather-next12-info" title="Dadeldhura" time="Issued on 2024-09-20 06:00 NPT" station_id="21" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Sunrise&lt;/td&gt;&lt;dd&gt;06:11&lt;/dd&gt;&lt;dt&gt;Sunset&lt;/td&gt;&lt;dd&gt;18:22&lt;/dd&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly Cloudy&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;26 - 28 &amp;deg;C&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/a615e226f71bdf14eb5b2c41a1ddd3f4.png"></img><span>26 - 28 &deg;C</span></DIV><DIV class="weather-icon" style="left:8.4489421962422%; top: 43.894464389817%" data-target="#weather-next12-info" title="Dhangadi" time="Issued on 2024-09-20 06:00 NPT" station_id="23" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Sunrise&lt;/td&gt;&lt;dd&gt;06:11&lt;/dd&gt;&lt;dt&gt;Sunset&lt;/td&gt;&lt;dd&gt;18:22&lt;/dd&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly Cloudy&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;34 - 36 &amp;deg;C&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/a615e226f71bdf14eb5b2c41a1ddd3f4.png"></img><span>34 - 36 &deg;C</span></DIV><DIV class="weather-icon" style="left:20.62192188993%; top: 45.789641049668%" data-target="#weather-next12-info" title="Birendranagar" time="Issued on 2024-09-20 06:00 NPT" station_id="24" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Sunrise&lt;/td&gt;&lt;dd&gt;06:07&lt;/dd&gt;&lt;dt&gt;Sunset&lt;/td&gt;&lt;dd&gt;18:18&lt;/dd&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly cloudy with brief thundershowers&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;33 - 35 &amp;deg;C&lt;/dd&gt;&lt;dt&gt;Chances of Rain&lt;/td&gt;&lt;dd&gt;20%&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/e176367bd8dc9d0ac9c0b8a427c7de2a.png"></img><span>33 - 35 &deg;C</span><span>20% chances of rain</span></DIV><DIV class="weather-icon" style="left:27.101297513204%; top: 30.381921494237%" data-target="#weather-next12-info" title="Jumla" time="Issued on 2024-09-20 06:00 NPT" station_id="26" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Sunrise&lt;/td&gt;&lt;dd&gt;06:04&lt;/dd&gt;&lt;dt&gt;Sunset&lt;/td&gt;&lt;dd&gt;18:16&lt;/dd&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly cloudy with brief thundershowers&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;26 - 28 &amp;deg;C&lt;/dd&gt;&lt;dt&gt;Chances of Rain&lt;/td&gt;&lt;dd&gt;30%&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/e176367bd8dc9d0ac9c0b8a427c7de2a.png"></img><span>26 - 28 &deg
+	;C</span><span>30% chances of rain</span></DIV><DIV class="weather-icon" style="left:28.083806471351%; top: 59.396398770436%" data-target="#weather-next12-info" title="Ghorahi" time="Issued on 2024-09-20 06:00 NPT" station_id="27" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Sunrise&lt;/td&gt;&lt;dd&gt;06:04&lt;/dd&gt;&lt;dt&gt;Sunset&lt;/td&gt;&lt;dd&gt;18:15&lt;/dd&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly Cloudy&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;32 - 34 &amp;deg;C&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/a615e226f71bdf14eb5b2c41a1ddd3f4.png"></img><span>32 - 34 &deg;C</span></DIV><DIV class="weather-icon" style="left:48.175761244975%; top: 53.421138897516%" data-target="#weather-next12-info" title="Pokhara" time="Issued on 2024-09-20 06:00 NPT" station_id="28" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Sunrise&lt;/td&gt;&lt;dd&gt;05:57&lt;/dd&gt;&lt;dt&gt;Sunset&lt;/td&gt;&lt;dd&gt;18:09&lt;/dd&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly cloudy with brief thundershowers&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;31 - 33 &amp;deg;C&lt;/dd&gt;&lt;dt&gt;Chances of Rain&lt;/td&gt;&lt;dd&gt;40%&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/e176367bd8dc9d0ac9c0b8a427c7de2a.png"></img><span>31 - 33 &deg;C</span><span>40% chances of rain</span></DIV><DIV class="weather-icon" style="left:42.02388860775%; top: 70.677549393001%" data-target="#weather-next12-info" title="Bhairahawa" time="Issued on 2024-09-20 06:00 NPT" station_id="29" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Sunrise&lt;/td&gt;&lt;dd&gt;05:59&lt;/dd&gt;&lt;dt&gt;Sunset&lt;/td&gt;&lt;dd&gt;18:11&lt;/dd&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly Cloudy&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;34 - 36 &amp;deg;C&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/a615e226f71bdf14eb5b2c41a1ddd3f4.png"></img><span>34 - 36 &deg;C</span></DIV><DIV class="weather-icon" style="left:64.64279987445%; top: 66.171299274833%" data-target="#weather-next12-info" title="Kathmandu" time="Issued on 2024-09-20 06:00 NPT" station_id="31" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Sunrise&lt;/td&gt;&lt;dd&gt;05:52&lt;/dd&gt;&lt;dt&gt;Sunset&lt;/td&gt;&lt;dd&gt;18:03&lt;/dd&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly cloudy with brief thundershowers&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;30 - 32 &amp;deg;C&lt;/dd&gt;&lt;dt&gt;Chances of Rain&lt;/td&gt;&lt;dd&gt;40%&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/e176367bd8dc9d0ac9c0b8a427c7de2a.png"></img><span>30 - 32 &deg;C</span><span>40% chances of rain</span></DIV><DIV class="weather-icon" style="left:77.954971609539%; top: 74.800340710933%" data-target="#weather-next12-info" title="Okhaldhunga" time="Issued on 2024-09-20 06:00 NPT" station_id="32" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Sunrise&lt;/td&gt;&lt;dd&gt;05:47&lt;/dd&gt;&lt;dt&gt;Sunset&lt;/td&gt;&lt;dd&gt;17:58&lt;/dd&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly to generally cloudy with brief rain/thundershowers&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;28 - 30 &amp;deg;C&lt;/dd&gt;&lt;dt&gt;Chances of Rain&lt;/td&gt;&lt;dd&gt;40%&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/e86f2169245cef36c2efb3c825c2a9f2.png"></img><span>28 - 30 &deg;C</span><span>40% chances of rain</span></DIV><DIV class="weather-icon" style="left:91.738370662685%; top: 74.051863579963%" data-target="#weather-next12-info" title="Taplejung" time="Issued on 2024-09-20 06:00 NPT" station_id="1" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Sunrise&lt;/td&gt;&lt;dd&gt;05:43&lt;/dd&gt;&lt;dt&gt;Sunset&lt;/td&gt;&lt;dd&gt;17:54&lt;/dd&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly to generally cloudy with brief rain/thundershowers&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;27 - 29 &amp;deg;C&lt;/dd&gt;&lt;dt&gt;Chances of Rain&lt;/td&gt;&lt;dd&gt;60%&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/e86f2169245cef36c2efb3c825c2a9f2.png"></img><span>27 - 29 &deg;C</span><span>60% chances of rain</span></DIV><DIV class="weather-icon" style="left:87.771814712946%; top: 82.2817824747%" data-target="#weather-next12-info" title="Dhankuta" time="Issued on 2024-09-20 06:00 NPT" station_id="33" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Sunrise&lt;/td&gt;&lt;dd&gt;05:44&lt;/dd&gt;&lt;dt&gt;Sunset&lt;/td&gt;&lt;dd&gt;17:55&lt;/dd&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly cloudy with brief thundershowers&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;31 - 33 &amp;deg;C&lt;/dd&gt;&lt;dt&gt;Chances of Rain&lt;/td&gt;&lt;dd&gt;40%&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/e176367bd8dc9d0ac9c0b8a427c7de2a.png"></img><span>31 - 33 &deg;C</span><span>40% chances of rain</span></DIV><DIV class="weather-icon" style="left:87.140370106751%; top: 94.109420180676%" data-target="#weather-next12-info" title="Biratnagar" time="Issued on 2024-09-20 06:00 NPT" station_id="34" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Sunrise&lt;/td&gt;&lt;dd&gt;05:44&lt;/dd&gt;&lt;dt&gt;Sunset&lt;/td&gt;&lt;dd&gt;17:55&lt;/dd&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly Cloudy&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;34 - 36 &amp;deg;C&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/a615e226f71bdf14eb5b2c41a1ddd3f4.png"></img><span>34 - 36 &deg;C</span></DIV><DIV class="weather-icon" style="left:45.530997922384%; top: 41.970445439816%" data-target="#weather-next12-info" title="Jomsom" time="Issued on 2024-09-20 06:00 NPT" station_id="35" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Sunrise&lt;/td&gt;&lt;dd&gt;05:58&lt;/dd&gt;&lt;dt&gt;Sunset&lt;/td&gt;&lt;dd&gt;18:10&lt;/dd&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly cloudy with brief thundershowers&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;24 - 26 &amp;deg;C&lt;/dd&gt;&lt;dt&gt;Chances of Rain&lt;/td&gt;&lt;dd&gt;30%&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/e176367bd8dc9d0ac9c0b8a427c7de2a.png"></img><span>24 - 26 &deg;C</span><span>30% chances of rain</span></DIV><DIV class="weather-icon" style="left:70.886561838696%; top: 88.621579211625%" data-target="#weather-next12-info" title="Janakpur" time="Issued on 2024-09-20 06:00 NPT" station_id="38" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Sunrise&lt;/td&gt;&lt;dd&gt;05:50&lt;/dd&gt;&lt;dt&gt;Sunset&lt;/td&gt;&lt;dd&gt;18:01&lt;/dd&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly Cloudy&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;36 - 38 &amp;deg;C&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/a615e226f71bdf14eb5b2c41a1ddd3f4.png"></img><span>36 - 38 &deg;C</span></DIV><DIV class="weather-icon" style="left:74.77418721266%; top: 67.749422703995%" data-target="#weather-next12-info" title="Jiri" time="Issued on 2024-09-20 06:00 NPT" station_id="39" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Sunrise&lt;/td&gt;&lt;dd&gt;05:48&lt;/dd&gt;&lt;dt&gt;Sunset&lt;/td&gt;&lt;dd&gt;18:00&lt;/dd&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly to generally cloudy with brief rain/thundershowers&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;26 - 28 &amp;deg;C&lt;/dd&gt;&lt;dt&gt;Chances of Rain&lt;/td&gt;&lt;dd&gt;40%&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/e86f2169245cef36c2efb3c825c2a9f2.png"></img><span>26 - 28 &deg;C</span><span>40% chances of rain</span></DIV></div><div class="tab-pane fade" id="next24" data-target="next24"><div class="weather-more-info" id="weather-next24-info"><div>Click on the stations to display more information</div></div><DIV class="weather-icon" style="left:12.375443823946%; top: 30.578774768213%" data-target="#weather-next24-info" title="Dipayal" time="Issued on 2024-09-20 06:00 NPT" station_id="22" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly Cloudy&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;22 - 24 &amp;deg;C&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/45db3c1b1e7cbc8e1f7e0a6a71588aca.png"></img><span>22 - 24 &deg;C</span></DIV><DIV class="weather-icon" style="left:8.2522047909537%; top: 29.816448443774%" data-target="#weather-next24-info" title="Dadeldhura" time="Issued on 2024-09-20 06:00 NPT" station_id="21" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly Cloudy&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;16 - 18 &amp;deg;C&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/45db3c1b1e7cbc8e1f7e0a6a71588aca.png"></img><span>16 - 18 &deg;C</span></DIV><DIV class="weather-icon" style="left:8.4489421962422%; top: 43.894464389817%" data-target="#weather-next24-info" title="Dhangadi" time="Issued on 2024-09-20 06:00 NPT" station_id="23" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Mainly fair&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;25 - 27 &amp;deg;C&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/8ed76a37c78be3e2c1262250b6a512cf.png"></img><span>25 - 27 &deg;C</span></DIV><DIV class="weather-icon" style="left:20.62192188993%; top: 45.789641049668%" data-target="#weather-next24-info" title="Birendranagar" time="Issued on 2024-09-20 06:00 NPT" station_id="24" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly Cloudy&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;23 - 25 &amp;deg;C&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/45db3c1b1e7cbc8e1f7e0a6a71588aca.png"></img><span>23 - 25 &deg;C</span></DIV><DIV class="weather-icon" style="left:27.101297513204%; top: 30.381921494237%" data-target="#weather-next24-info" title="Jumla" time="Issued on 2024-09-20 06:00 NPT" station_id="26" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly cloudy with brief thundershowers&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;14 - 16 &amp;deg;C&lt;/dd&gt;&lt;dt&gt;Chances of Rain&lt;/td&gt;&lt;dd&gt;30%&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/c2ba0ff12d58bb9437375aba02fb7d0a.png"></img><span>14 - 16 &deg;C</span><span>30% chances of rain</span></DIV><DIV class="weather-icon" style="left:28.083806471351%; top: 59.396398770436%" data-target="#weather-next24-info" title="Ghorahi" time="Issued on 2024-09-20 06:00 NPT" station_id="27" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Mainly fair&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;25 - 27 &amp;deg;C&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/8ed76a37c78be3e2c1262250b6a512cf.png"></img><span>25 - 27 &deg;C</span></DIV><DIV class="weather-icon" style="left:48.175761244975%; top: 53.421138897516%" data-target="#weather-next24-info" title="Pokhara" time="Issued on 2024-09-20 06:00 NPT" station_id="28" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly to generally cloudy with brief rain/thundershowers&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;21 - 23 &amp;deg;C&lt;/dd&gt;&lt;dt&gt;Chances of Rain&lt;/td&gt;&lt;dd&gt;60%&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/6721e4f9551caaf32aa3a583e176274b.png"></img><span>21 - 23 &deg;C</span><span>60% chances of rain</span></DIV><DIV class="weather-icon" style="left:42.02388860775%; top: 70.677549393001%" data-target="#weather-next24-info" title="Bhairahawa" time="Issued on 2024-09-20 06:00 NPT" station_id="29" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly Cloudy&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;25 - 27 &amp;deg;C&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/45db3c1b1e7cbc8e1f7e0a6a71588aca.png"></img><span>25 - 27 &deg;C</span></DIV><DIV class="weather-icon" style="left:64.64279987445%; top: 66.171299274833%" data-target="#weather-next24-info" title="Kathmandu" time="Issued on 2024-09-20 06:00 NPT" station_id="31" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly cloudy with brief thundershowers&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;20 - 22 &amp;deg;C&lt;/dd&gt;&lt;dt&gt;Chances of Rain&lt;/td&gt;&lt;dd&gt;30%&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/c2ba0ff12d58bb9437375aba02fb7d0a.png"></img><span>20 - 22 &deg;C</span><span>30% chances of rain</span></DIV><DIV class="weather-icon" style="left:77.954971609539%; top: 74.800340710933%" data-target="#weather-next24-info" title="Okhaldhunga" time="Issued on 2024-09-20 06:00 NPT" station_id="32" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly Cloudy&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;19 - 21 &amp;deg;C&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/45db3c1b1e7cbc8e1f7e0a6a71588aca.png"></img><span>19 - 21 &deg;C</span></DIV><DIV class="weather-icon" style="left:91.738370662685%; top: 74.051863579963%" data-target="#weather-next24-info" title="Taplejung" time="Issued on 2024-09-20 06:00 NPT" station_id="1" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly Cloudy&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;17 - 19 &amp;deg;C&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/45db3c1b1e7cbc8e1f7e0a6a71588aca.png"></img><span>17 - 19 &deg;C</span></DIV><DIV class="weather-icon" style="left:87.771814712946%; top: 82.2817824747%" data-target="#weather-next24-info" title="Dhankuta" time="Issued on 2024-09-20 06:00 NPT" station_id="33" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly Cloudy&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;20 - 22 &amp;deg;C&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/45db3c1b1e7cbc8e1f7e0a6a71588aca.png"></img><span>20 - 22 &deg;C</span></DIV><DIV class="weather-icon" style="left:87.140370106751%; top: 94.109420180676%" data-target="#weather-next24-info" title="Biratnagar" time="Issued on 2024-09-20 06:00 NPT" station_id="34" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Mainly fair&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;25 - 27 &amp;deg;C&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/8ed76a37c78be3e2c1262250b6a512cf.png"></img><span>25 - 27 &deg;C</span></DIV><DIV class="weather-icon" style="left:45.530997922384%; top: 41.970445439816%" data-target="#weather-next24-info" title="Jomsom" time="Issued on 2024-09-20 06:00 NPT" station_id="35" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly to generally cloudy with brief rain/thundershowers&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;11 - 13 &amp;deg;C&lt;/dd&gt;&lt;dt&gt;Chances of Rain&lt;/td&gt;&lt;dd&gt;40%&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/6721e4f9551caaf32aa3a583e176274b.png"></img><span>11 - 13 &deg;C</span><span>40% chances of rain</span></DIV><DIV class="weather-icon" style="left:70.886561838696%; top: 88.621579211625%" data-target="#weather-next24-info" title="Janakpur" time="Issued on 2024-09-20 06:00 NPT" station_id="38" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly Cloudy&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;26 - 28 &amp;deg;C&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/45db3c1b1e7cbc8e1f7e0a6a71588aca.png"></img><span>26 - 28 &deg;C</span></DIV><DIV class="weather-icon" style="left:74.77418721266%; top: 67.749422703995%" data-target="#weather-next24-info" title="Jiri" time="Issued on 2024-09-20 06:00 NPT" station_id="39" data-pop="&lt;dl class=&quot;dl-horizontal&quot;&gt;&lt;dt&gt;Weather&lt;/td&gt;&lt;dd&gt;Partly cloudy with brief thundershowers&lt;/dd&gt;&lt;dt&gt;Expected Temperature&lt;/td&gt;&lt;dd&gt;13 - 15 &amp;deg;C&lt;/dd&gt;&lt;dt&gt;Chances of Rain&lt;/td&gt;&lt;dd&gt;40%&lt;/dd&gt;&lt;/dl&gt;"><img src="/mfd.gov.np/_files/c2ba0ff12d58bb9437375aba02fb7d0a.png"></img><span>13 - 15 &deg;C</span><span>40% chances of rain</span></DIV></div></div><div class="container main-body"><div class="row"><div class="col-md-6"><DIV class="highlight-box weather-data-table"><h3>Observations <em>2024-09-19 17:45 NPT</em></h3><table class="table" style="margin-bottom: 0px"><tr><th>Station</th><th class="center">Maximum Temp.<br/>(°C)</th><th class="center">Minimum Temp.<br/>(°C)</th><th class="center">24 hrs Rainfall<br/>(mm)</th></tr><tr><td>Dipayal</td><td class="center">35.6</td><td class="center">22.3</td><td class="center">0.0</td></tr><tr><td>Dadeldhura</td><td class="center">27.4</td><td class="center">16.7</td><td class="center">0.0</td></tr><tr><td>Dhangadi</td><td class="center">34.8</td><td class="center">25.2</td><td class="center">0.0</td></tr><tr><td>Birendranagar</td><td class="center">34.0</td><td class="center">22.0</td><td class="center">0.0</td></tr><tr><td>Nepalgunj</td><td class="center">35.2</td><td class="center">25.5</td><td class="center">0.0</td></tr><tr><td>Jumla</td><td class="center">28.5</td><td class="center">11.5</td><td class="center">0.0</td></tr><tr><td>Ghorahi</td><td class="center">32.2</td><td class="center">22.5</td><td class="center">0.0</td></tr><tr><td>Pokhara</td><td class="center">33.2</td><td class="center">21.5</td><td class="center">0.0</td></tr><tr><td>Bhairahawa</td><td class="center">35.5</td><td class="center">26.3</td><td class="center">0.0</td></tr><tr><td>Simara</td><td class="center">34.6</td><td class="center">25.5</td><td class="center">0.0</td></tr><tr><td>Kathmandu</td><td class="center">32.6</td><td class="center">21.2</td><td class="center">0.0</td></tr><tr><td>Okhaldhunga</td><td class="center">29.2</td><td class="center">19.0</td><td class="center">0.0</td></tr><tr><td>Taplejung</td><td class="center">29.4</td><td class="center">18.3</td><td class="center">0.1</td></tr><tr><td>Dhankuta</td><td class="center">33.0</td><td class="center">20.4</td><td class="center">0.0</td></tr><tr><td>Biratnagar</td><td class="center">35.0</td><td class="center">26.2</td><td class="center">0.0</td></tr><tr><td>Jomsom</td><td class="center">25.0</td><td class="center">10.5</td><td class="center">0.0*</td></tr><tr><td>Dharan</td><td class="center">36.0</td><td class="center">24.4</td><td class="center">0.0*</td></tr><tr><td>Lumle</td><td class="center">27.0</td><td class="center">17.2</td><td class="center">0.0*</td></tr><tr><td>Janakpur</td><td class="center">38.8</td><td class="center">27.6</td><td class="center">0.0*</td></tr><tr><td>Jiri</td><td class="center">27.4</td><td class="center">14.1</td><td class="center">0.0*</td></tr><tr><td align="right" colspan="4"><small>* Daily rainfall data ending at 08:45 AM NPT</small></td></tr></table></DIV></div><div class="col-md-6"><DIV class="highlight-box forecast-box"><h3>Forecasts <em>2024-09-20 06:00 NPT</em></h3><div class="SpecialHighlight"><a href="/content/?id=6317"><span>मौसम पुर्वानुमान बुलेटिन</span><span class="SpecialLabel"><img src="/mfd.gov.np/_req/new.gif"></img></span></a></div><div class="SpecialHighlight1" style="margin-top:7px;margin-left:10px;padding:0px"><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vS0rPBd5I7TW8o462sBzcqdDAkuBKcAhRGflUsz0NxunEf-uDc5Zo9e3L-lm0-sQwcwz0SSb70udmP0/pubhtml?widget=true&amp;amp;headers=false"><span>Forecast Terminology</span></a></div><div class="carousel slide" data-ride="carousel" id="forecast_carousel_1"><ol class="carousel-indicators"><li data-target="#forecast_carousel_1" data-slide-to="0" data-ride="carousel" data-toggle="tooltip" data-placement="top" title="Nepal" class="active"></li></ol><div class="carousel-inner"><div class="item active"><div><h4>Nepal</h4><b>Today</b><p>Partly to generally cloudy throughout the country. Light to moderate rain with thunder and lightning is likely to occur at some places of Koshi Province, Bagmati Province and Karnali Province and at a few places of Gandaki Province and at one or two places of rest of the country. </p><b>Tonight</b><p>Partly to generally cloudy throughout the country. Light to moderate rain with thunder and lightning is likely to occur at some places of hilly region of Bagmati Province and Gandaki Province and at one or two parts of hilly regions of rest of the province. </p><b>Meteorological Analysis</b><p>मनसुनको न्यून चापीय रेखाको पश्चिमतिर सरदर स्थानको उत्तरतिर र पूर्वमा सरदर स्थानको दक्षिणतिर अवस्थित रहेको छ । देशभर मनसुनी वायुको प्रभाव रहेको  छ । </p></div></div></div><div class="text-center"><a class="btn btn-info" href="/weather/#forecasts">More detail...</a></div></div></DIV></div></div></div></DIV><footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<h3>Contact Us</h3>
+				<h4>Meteorological Forecasting Division</h4>
+				<p>Gauchar, Tribhuvan International Airport<br/>
+					Kathmandu, Nepal<br/>
+					<abbr title="Phone"><span class="glyphicon glyphicon-earphone"></span></abbr>:
+					+977 1 4486869<br/>
+					<abbr title="Email"><span class="glyphicon glyphicon-envelope"></span></abbr>:
+					<a href="mailto:info@mfd.gov.np">info@mfd.gov.np</a>
+				</p>
+				<p><b>Please dial and listen to us for notice board service</b>
+				<dl class="footer-number-list dl-horizontal">
+					<dt>Kathmandu:</dt><dd>1618 07 07 33333 (for daily weather updates)</dd>
+					<dt>Surkhet:</dt><dd>1618 083 523519 (for daily weather data)</dd>
+					<dt>Pokhara:</dt><dd>1618 061 465299 (for daily weather data)</dd>
+					<dt>Dharan:</dt><dd>1618 025 520272 (for daily weather data)</dd>
+				</dl>
+			</div>
+			<div class="col-sm-6">
+				<h3>Links</h3>
+				<h4>
+					<a target="_blank" href="http://www.dhm.gov.np">Department of Hydrology and
+						Meteorology</a>
+				</h4>
+
+				<h4>
+					<a target="_blank" href="http://www.hydrology.gov.np">Flood        Forecasting Division</a>
+				</h4>
+				<h4>
+					<a target="_blank" href="http://www.mope.gov.np">Ministry of Population and Environment</a>
+				</h4>
+			</div>
+		</div>
+	</div>
+<iframe src ="http://dhm.gov.np/commonfooter.php" style="width:100%; border:none" ></iframe>
+
+
+</footer>
+<div class="copyright-line">
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-sm-6">
+
+				<p><small>Copyright &copy; 2025 Meteorological Forecasting Divison, DHM</small></p>
+			</div>
+
+			<div class="col-sm-6">
+
+				<p><small>
+
+						Designed and developed by <a href="http://www.rts.com.np">Real
+
+							Time Solutions Pvt. Ltd.</a></small>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="/mfd.gov.np/_jquery/jquery-1.11.0.min.js"></script>
+<script src="/mfd.gov.np/_bootstrap/js/bootstrap.min.js"></script>
+
+
+
+<script src="/mfd.gov.np/_js/highstock.js"></script>
+
+<script > $('li').tooltip(); </script>
+
+<script > 				$('.weather-icon').click(function(e) {
+						var target = $(this).attr('data-target');
+						var pop = $(this).attr('data-pop');
+						$(target + ' div').html('<h2>' + $(this).attr('title') + '</h2><em>' + $(this).attr('time') + '</em>' + pop + '<a class="city-link" href="/city?id=' + $(this).attr('station_id') + '">Detail...</a>'); 	
+						//alert(target);
+					}); </script>
+
+<script > 			// Javascript to enable link to tab
+// 			var url = document.location.toString();
+// 			if (url.match('#')) {
+// 				$('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;
+// 			}
+			
+// 			// Change hash for page-reload
+// 			$('.nav-tabs a').on('shown.bs.tab', function (e) {
+// 				//window.location.hash = e.target.hash;
+// 			}) </script>
+
+	
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-48154100-1', 'www.mfd.gov.np');
+	ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
