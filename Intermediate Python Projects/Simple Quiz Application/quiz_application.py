@@ -2,6 +2,8 @@
 #     *Description*: Create a quiz application that asks multiple-choice questions and provides feedback.  
 #     *Skills*: Lists, loops, conditionals.
 
+import random
+
 class Question:
     def __init__(self, prompt, options, answer):
         self.prompt = prompt
@@ -11,6 +13,8 @@ class Question:
     def is_correct(self, user_answer_index):
         # Check if the user's chosen index (0-based) matches the index of the correct answer
         return user_answer_index == self.options.index(self.answer)
+    def shuffle_options(self):
+        random.shuffle(self.options)
 
 
 class Quiz:
@@ -22,7 +26,10 @@ class Quiz:
         self.questions.append(question)
 
     def conduct_quiz(self):
+        random.shuffle(self.questions)  # Shuffle the order of questions
+
         for question in self.questions:
+            question.shuffle_options()  # Shuffle the options for each question
             print(question.prompt)
             for i, option in enumerate(question.options):
                 print(f"{i + 1}. {option}")
