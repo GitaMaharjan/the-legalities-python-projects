@@ -7,7 +7,7 @@ import os
 import datetime
 
 # Journal file to store entries
-JOURNAL_FILE = "journal_entries.json"
+JOURNAL_FILE = "Personal Journal Application/journal_entries.json"
 
 def load_entries():
     """Load journal entries from a JSON file.
@@ -139,7 +139,6 @@ def main():
     entries = load_entries()  # Load existing entries from the JSON file
     
     while True:  # Main loop for the application
-        print("\n--- Advanced Journal Application ---")
         print("1. Write a new entry")  # Option to write a new entry
         print("2. Read entries")  # Option to read existing entries
         print("3. Edit an entry")  # Option to edit an entry
