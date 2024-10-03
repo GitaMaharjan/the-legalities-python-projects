@@ -1,0 +1,1 @@
+The program systematically processes files from a specified input directory, checking their extensions to determine the type of conversion required (text, image, or Word document), and then generates the corresponding PDF files in a designated output directory. Each function is clearly defined for handling specific file types, demonstrating modular programming and readability.
