@@ -1,0 +1,25 @@
+{
+    "income": 500000.0,
+    "expenses": [
+        {
+            "amount": 1000.0,
+            "category": "rent",
+            "date": "2024-10-03"
+        },
+        {
+            "amount": 10000.0,
+            "category": "electricity",
+            "date": "2024-10-03"
+        },
+        {
+            "amount": 5000.0,
+            "category": "food",
+            "date": "2024-10-03"
+        },
+        {
+            "amount": 6000.0,
+            "category": "entertainment",
+            "date": "2024-10-03"
+        }
+    ]
+}
